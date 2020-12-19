@@ -6,3 +6,5 @@ Helper scripts, mostly for OpenBSD (and other *nix operating systems)
 **getkishore.sh**: Retrieve the pdf versions of the Kishore magazine, published since 1973. Note the origin server can be slow, and the script may need to run for several hours to download the entire archive. Archive: http://kishor.ebalbharati.in/Archive/
 
 **certexp.sh**: Generate csv file listing certificate expiry and number of days remaining until expiration for domain(s). FQDN or IP address specified in a file, one per line.
+
+**log.sh**: LOG() function. Can be imported into another script.
