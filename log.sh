@@ -3,6 +3,26 @@
 
 ################################################################################
 # Description :
+## "echo"es usage of LOG().
+
+# Arguments   : NA
+
+# Return Value:
+## 0 for success. No other return value.
+
+# Additional note: NA
+################################################################################
+log_usage() {
+	echo "<"$FUNCNAME"> Incorrect arguments."
+	echo "<"$FUNCNAME"> Usage:"
+	echo "<"$FUNCNAME"> LOG <0|1> <logfile> <log_message> [if timestamp-flag is 1: \$FUNCNAME] [if timestamp-flag is 1: \$LINENO]"
+
+	return 0
+}
+
+
+################################################################################
+# Description :
 ## - Writes logs into logfile defined by argument $2.
 ## - This function should ideally be made a part of some common code which can
 ## be imported in some other shell script source code.
